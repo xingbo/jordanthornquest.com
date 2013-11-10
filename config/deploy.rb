@@ -10,7 +10,7 @@ set :use_sudo, false
 set :user, "jordanthornquest"
 
 # the path to deploy to on your VPS
-set :deploy_to, "/home/#{user}/blog"
+set :deploy_to, "/home/#{user}/site"
 
 # Set the Port
 set :port, "3699"
