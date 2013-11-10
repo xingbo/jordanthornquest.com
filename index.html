@@ -1,13 +1,18 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Jordan Thornquest
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+
+  <img alt="Lips." class="img-responsive one-edge-shadow center-img" height="500" src="http://farm4.staticflickr.com/3806/9364330402_8a73483b36_o.jpg" width="500">
+
+  <h1>Posts</h1>
+
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+
 </div>
