@@ -1,4 +1,2 @@
-jordanthornquest.com
-====================
-
-The official website of me!
+# JordanThornquest.com
+Powered by Jekyll.
