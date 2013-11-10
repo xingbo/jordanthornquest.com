@@ -7,7 +7,7 @@ set :copy_compression, :gzip
 set :use_sudo, false
 
 # the name of the user that should be used for deployments on your VPS
-set :user, "jordanthornquest"
+set :user, "jst"
 
 # the path to deploy to on your VPS
 set :deploy_to, "/home/#{user}/site"
