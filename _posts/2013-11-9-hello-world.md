@@ -11,4 +11,4 @@ We're currently under construction, but I just couldn't wait any longer to start
 
 **Stay tuned for more stuff.**
 
-![NINJA CAT](http://farm4.staticflickr.com/3763/10802994273_cb67fdfdc3_o.jpg)
+<a href="http://www.flickr.com/photos/jordanthornquest/10802994273/" title="NINJA CAT by jordanthornquest, on Flickr"><img class="img-responsive" src="http://farm4.staticflickr.com/3763/10802994273_cb67fdfdc3_o.jpg" alt="NINJA CAT"></a>
