@@ -3,7 +3,6 @@ layout: post
 title: Hello, new content!
 categories:
 - blog
-- site update
 comments: true
 ---
 
