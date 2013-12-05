@@ -6,6 +6,7 @@
         <title>{{ page.title }}</title>
         <meta name="description" content="'So far out of the box, but not so far out of my mind.' Welcome to my home on the web.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" type="image/png" href="/favicon.png">
 
         <!-- Bootstrap! -->
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
@@ -22,53 +23,14 @@
     <body>
 
     <div class="container">
-      <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Jordan Thornquest</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="/about.html">About</a>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="pull-left" href="https://twitter.com/jsthornquest">
-                <i class="fa fa-twitter fa-lg"></i>
-              </a>
-              <a class="pull-left" href="https://www.facebook.com/jsthornquest">
-                <i class="fa fa-facebook fa-lg"></i>
-              </a>
-              <a class="pull-left" href="https://github.com/jordanthornquest">
-                <i class="fa fa-github fa-lg"></i>
-              </a>
-              <a class="pull-left" href="https://soundcloud.com/jordanthornquest">
-                <i class="fa fa-cloud fa-lg"></i>
-              </a>
-              <a class="pull-left" href="http://pinterest.com/jsthornquest/">
-                <i class="fa fa-pinterest fa-lg"></i>
-              </a>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
 
       {{ content }}
 
-    </div>
+      <div class="footer">
+        <hr>
+        <small class="text-muted"> Website by me. Proudly hosted on <a href="http://digitalocean.com">Digital Ocean</a> and built with <a href="http://jekyllrb.com">Jekyll.</a></small>
+      </div>
 
-    <div class="footer">
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

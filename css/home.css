@@ -1,5 +1,6 @@
 .container {
   padding-top: 10px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: 1200px) {
@@ -25,4 +26,8 @@
 
 .page-header {
   margin-top: 25px;
+}
+
+.portfolio-item-title {
+  margin-bottom: 25px;
 }

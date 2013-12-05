@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hello World
+categories:
+- blog
 comments: true
 ---
 

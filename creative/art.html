@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Art
 ---
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,12 +26,12 @@ layout: default
       <li>
       <a href="/portfolio.html"> Portfolio</a>
       </li>
-      <li class="dropdown">
+      <li class="dropdown active">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creative <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="/creative.html">Home</a></li>
             <li class="divider"></li>
-            <li><a href="/creative/art.html">Art</a></li>
+            <li class="active"><a href="/creative/art.html">Art</a></li>
             <li><a href="/creative/music.html">Music</a></li>
             <li><a href="/creative/writing.html">Writing</a></li>
             </ul>
@@ -57,35 +58,8 @@ layout: default
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
-  </nav>
+</nav>
 
-<div class="page-header">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
-</div>
-
-<div class="post">
-{{ content }}
-
-<br>
-
-{{ if page.comments }}
-
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = 'jordanthornquest'; // required: replace example with your forum shortname
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-</div>
-
-{{ endif }}
+<img class="img-responsive one-edge-shadow" src="http://farm6.staticflickr.com/5479/11218784354_cc012246fe_o.jpg" alt="FieldFox">
+<h1>Art <small>pencil and paper, tablet and pen.</small></h1>
+<p>I love to draw, and actually dream of doing comic art one day. Graphic design is pretty awesome, too. I'll get some up here as soon as I have some.</p>

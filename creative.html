@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Creative
 ---
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,10 +26,10 @@ layout: default
       <li>
       <a href="/portfolio.html"> Portfolio</a>
       </li>
-      <li class="dropdown">
+      <li class="dropdown active">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creative <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="/creative.html">Home</a></li>
+            <li class="active"><a href="/creative.html">Home</a></li>
             <li class="divider"></li>
             <li><a href="/creative/art.html">Art</a></li>
             <li><a href="/creative/music.html">Music</a></li>
@@ -59,33 +60,13 @@ layout: default
     </div><!-- /.navbar-collapse -->
   </nav>
 
-<div class="page-header">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
-</div>
 
-<div class="post">
-{{ content }}
+<div id="home">
 
-<br>
+  <img src="http://farm4.staticflickr.com/3831/11217263025_ae1596d70d_o.jpg" class="img-responsive one-edge-shadow" alt="Amp &amp; Feet">
 
-{{ if page.comments }}
+  <h1>Creative <small>stuff that I've made.</small></h1>
 
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = 'jordanthornquest'; // required: replace example with your forum shortname
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  <p>More stuff on the way. Check the "Creative" dropdown for what's available, for now :)</p>
 
 </div>
-
-{{ endif }}

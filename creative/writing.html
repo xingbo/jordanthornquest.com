@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Writing
 ---
 <nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,14 +26,14 @@ layout: default
       <li>
       <a href="/portfolio.html"> Portfolio</a>
       </li>
-      <li class="dropdown">
+      <li class="dropdown active">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creative <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="/creative.html">Home</a></li>
             <li class="divider"></li>
             <li><a href="/creative/art.html">Art</a></li>
             <li><a href="/creative/music.html">Music</a></li>
-            <li><a href="/creative/writing.html">Writing</a></li>
+            <li class="active"><a href="/creative/writing.html">Writing</a></li>
             </ul>
         </li>
       </ul>
@@ -57,35 +58,18 @@ layout: default
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
-  </nav>
+</nav>
 
+<img class="img-responsive one-edge-shadow" src="http://farm3.staticflickr.com/2849/11218786095_84b0e7ef3c_o.jpg" alt="Smoulder">
 <div class="page-header">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
+  <h1>Writing <small>when speech often fails.</small></h1>
+  <p>That up there is my "author's-biography-pic-in-the-back-of-his-book" face. Mmm, mmm.</p>
+  <p>I love to write, and I think it's my favorite way to express my thoughts. Here lies writings that are more than blog posts: they're stories. Some of these originated from NaNoWriMo, too!</p>
 </div>
 
-<div class="post">
-{{ content }}
-
-<br>
-
-{{ if page.comments }}
-
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = 'jordanthornquest'; // required: replace example with your forum shortname
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-</div>
-
-{{ endif }}
+<h3>Beagles <small>NaNoWriMo 2012 Novel</small></h3>
+<ul class="posts list-unstyled">
+  {% for post in site.categories['stories'] %}
+  <li><span>{{ post.date | date_to_string }}</span> <i class="fa fa-angle-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
