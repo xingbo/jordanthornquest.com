@@ -31,3 +31,11 @@
 .portfolio-item-title {
   margin-bottom: 25px;
 }
+
+.home-header {
+  border: none;
+}
+
+.jst-timeline iframe {
+  width: 100%;
+}
