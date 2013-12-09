@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: Hello, new content!
 categories:
 - blog
