@@ -13,6 +13,6 @@ title: Writing
 <h3>Beagles <small>NaNoWriMo 2012 Novel</small></h3>
 <ul class="posts list-unstyled">
   {% for post in site.categories['stories'] %}
-  <li><span>{{ post.date | date_to_string }}</span> <i class="fa fa-angle-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li><i class="fa fa-angle-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
