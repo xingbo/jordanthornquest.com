@@ -1,5 +1,4 @@
 .container {
-  padding-top: 10px;
   padding-bottom: 25px;
 }
 
@@ -37,11 +36,7 @@
 }
 
 @media (min-width: 768px) {
-  .jst-timeline iframe {
+  .jst-twitter iframe {
     width: 100%;
   }
-}
-
-.streams {
-  padding-top: 20px;
 }
