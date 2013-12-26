@@ -2,64 +2,6 @@
 layout: default
 title: Jordan Thornquest
 ---
-<nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="/">Jordan Thornquest</a>
-  </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li>
-        <a href="/about.html">About</a>
-      </li>
-      <li>
-        <a href="/contact.html">Contact</a>
-      </li>
-      <li>
-      <a href="/portfolio.html"> Portfolio</a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Creative <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="/creative.html">Home</a></li>
-            <li class="divider"></li>
-            <li><a href="/creative/art.html">Art</a></li>
-            <li><a href="/creative/music.html">Music</a></li>
-            <li><a href="/creative/writing.html">Writing</a></li>
-            </ul>
-        </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="pull-left" href="https://twitter.com/jsthornquest">
-            <i class="fa fa-twitter fa-lg"></i>
-          </a>
-          <a class="pull-left" href="https://www.facebook.com/jsthornquest">
-            <i class="fa fa-facebook fa-lg"></i>
-          </a>
-          <a class="pull-left" href="https://github.com/jordanthornquest">
-            <i class="fa fa-github fa-lg"></i>
-          </a>
-          <a class="pull-left" href="https://soundcloud.com/jordanthornquest">
-            <i class="fa fa-cloud fa-lg"></i>
-          </a>
-          <a class="pull-left" href="http://pinterest.com/jsthornquest/">
-            <i class="fa fa-pinterest fa-lg"></i>
-          </a>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </nav>
-
 <div id="home">
 
   <img class="img-responsive one-edge-shadow" src="http://farm4.staticflickr.com/3818/11146321745_b06e3d2cda_o.jpg" alt="5 Guitarists">
@@ -69,15 +11,15 @@ title: Jordan Thornquest
 
     <!-- Visible only on Desktop & Tablets -->
     <ul class="nav nav-tabs nav-justified streams visible-md visible-lg">
-      <li class="active"><a href="#blog" data-toggle="tab">Blog</a></li>
-      <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
+      <li><a href="#blog" data-toggle="tab">Blog</a></li>
+      <li class="active"><a href="#twitter" data-toggle="tab">Twitter</a></li>
       <li><a href="#soundcloud" data-toggle="tab">SoundCloud</a></li>
     </ul>
 
     <!-- Visible only on Tablets & Mobile -->
     <ul class="nav nav-tabs streams visible-sm visible-xs">
-      <li class="active"><a href="#blog" data-toggle="tab">Blog</a></li>
-      <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
+      <li><a href="#blog" data-toggle="tab">Blog</a></li>
+      <li class="active"><a href="#twitter" data-toggle="tab">Twitter</a></li>
       <li><a href="#soundcloud" data-toggle="tab">SoundCloud</a></li>
     </ul>
   </div>
@@ -86,7 +28,7 @@ title: Jordan Thornquest
   <div class="tab-content">
 
     <!-- Blog -->
-    <div class="tab-pane fade in active" id="blog">
+    <div class="tab-pane fade" id="blog">
       <ul class="posts list-unstyled">
         {% for post in site.categories['blog'] %}
         <li><span>{{ post.date | date_to_string }}</span> <i class="fa fa-angle-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -95,7 +37,7 @@ title: Jordan Thornquest
     </div>
 
     <!-- Twitter -->
-    <div class="tab-pane fade jst-timeline" id="twitter">
+    <div class="tab-pane fade in active jst-timeline" id="twitter">
       <a class="twitter-timeline" href="https://twitter.com/jsthornquest" data-widget-id="409955524235362304">Tweets by @jsthornquest</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>  
     </div>

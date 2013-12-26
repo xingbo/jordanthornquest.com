@@ -36,8 +36,10 @@
   border: none;
 }
 
-.jst-timeline iframe {
-  width: 100%;
+@media (min-width: 768px) {
+  .jst-timeline iframe {
+    width: 100%;
+  }
 }
 
 .streams {
