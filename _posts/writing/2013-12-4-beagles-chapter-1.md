@@ -2,7 +2,8 @@
 layout: writing
 title: Beagles! - Chapter 1
 categories:
-- stories
+- creative
+- writing
 - beagles
 comments: true
 ---
