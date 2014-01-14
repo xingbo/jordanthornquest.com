@@ -1,4 +1,5 @@
 name: Jordan Thornquest
-permalink: /:categories/:title
+permalink: pretty
 markdown: redcarpet
 pygments: true
+port: 3699
