@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Home
 ---
 
 <img class="img-responsive one-edge-shadow" src="http://farm4.staticflickr.com/3818/11146321745_b06e3d2cda_o.jpg" alt="5 Guitarists">
@@ -22,11 +21,13 @@ title: Home
 </div>
 
 <!-- Tab panes -->
-<div class="tab-content">
+<section class="tab-content">
 
   <!-- Blog -->
   <div class="tab-pane fade in active fade" id="blog">
-    <h1>Posts <small>musings, stories, ideas, and code.</small></h1>
+    <header class="page-header">
+      <h1>Posts <small>musings, stories, ideas, and code.</small></h1>
+    </header>
     <ul class="posts list-unstyled">
       {% for post in site.categories['blog'] %}
       <li><span>{{ post.date | date_to_string }}</span> <i class="fa fa-angle-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -45,4 +46,4 @@ title: Home
     <iframe width="100%" height="600" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4836768&amp;color=ff6600&amp;auto_play=false&amp;show_artwork=true"></iframe>
   </div>
 
-</div>
+</section>
