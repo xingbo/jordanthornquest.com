@@ -3,15 +3,16 @@ layout: default
 title: Writing
 ---
 
-<img class="img-responsive one-edge-shadow" src="http://farm3.staticflickr.com/2849/11218786095_84b0e7ef3c_o.jpg" alt="Smoulder">
-<div class="page-header">
+<header class="page-header">
+  <img class="img-responsive one-edge-shadow" src="http://farm3.staticflickr.com/2849/11218786095_84b0e7ef3c_o.jpg" alt="Smoulder">
   <h1>Writing <small>when speech often fails.</small></h1>
   <p>That up there is my "author's-biography-pic-in-the-back-of-his-book" face. Mmm, mmm.</p>
   <p>I love to write, and I think it's my favorite way to express my thoughts. Here lies writings that are more than blog posts: they're stories. Some of these originated from NaNoWriMo, too!</p>
-</div>
+</header>
 
 <h3>Beagles <small>NaNoWriMo 2012 Novel</small></h3>
 <p>Beagles was my 2012 NaNoWriMo project, and the first NaNoWriMo I successfully completed! It's full of mistakes, hasn't been edited at all, and is unfinished, but hey, I made it!</p>
+
 <ul class="posts list-unstyled">
   {% for post in site.categories['writing'] %}
   <li><i class="fa fa-angle-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
