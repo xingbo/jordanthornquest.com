@@ -4,7 +4,7 @@ layout: default
 
 <img class="img-responsive one-edge-shadow" src="http://farm4.staticflickr.com/3818/11146321745_b06e3d2cda_o.jpg" alt="5 Guitarists">
 
-<div class="page-header home-header">
+<nav class="stream-tabs">
   <!-- Visible only on Desktop & Tablets -->
   <ul class="nav nav-tabs nav-justified streams hidden-xs">
     <li class="active"><a href="#blog" data-toggle="tab">Blog</a></li>
@@ -18,21 +18,33 @@ layout: default
     <li><a href="#twitter" data-toggle="tab">Twitter</a></li>
     <li><a href="#soundcloud" data-toggle="tab">SoundCloud</a></li>
   </ul>
-</div>
+</nav>
 
 <!-- Tab panes -->
 <section class="tab-content">
 
   <!-- Blog -->
   <div class="tab-pane fade in active fade" id="blog">
-    <header class="page-header">
+
+    <header>
       <h1>Posts <small>musings, stories, ideas, and code.</small></h1>
     </header>
-    <ul class="posts list-unstyled">
-      {% for post in site.categories['blog'] %}
-      <li><span>{{ post.date | date_to_string }}</span> <i class="fa fa-angle-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+
+    {% for post in site.categories['blog'] %}
+      <article class="post">
+        <hr>
+        <header class="post-header">
+          <h3>{{ post.title }}</h3>
+          <small class="text-muted post-info pull-left"><span><i class="fa fa-calendar"></i></span> {{ post.date | date_to_string }}</small>
+          <small class="text-muted post-info pull-left"><span><i class="fa fa-file-text"></i></span> Article</small>
+        </header>
+        <br>
+
+        <p>{{ post.preview }}</p>
+        <p><a href="{{ post.url }}">Read post <span><i class="fa fa-angle-double-right"></i></span></p>
+      </article>
+    {% endfor %}
+
   </div>
 
   <!-- Twitter -->

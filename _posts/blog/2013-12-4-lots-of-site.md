@@ -4,6 +4,7 @@ title: Hello, new content!
 categories:
 - blog
 comments: true
+preview: Holy site updates, Batman! There is a freakin' huge amount of new stuff on the website! I encourage you to check it all out.
 ---
 
 <p class="lead">Holy site updates, Batman!</p> There is a freakin' huge amount of new stuff on the website! I encourage you to check it all out.
