@@ -12,6 +12,7 @@ set :branch, 'master'
 # Optional settings:
 set :user, 'jst'    # Username in the server to SSH to.
 set :port, '3699'
+set :term_mode, nil
 
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
