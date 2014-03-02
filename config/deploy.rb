@@ -17,7 +17,7 @@ set :term_mode, nil
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
 task :environment do
-  invoke :'rvm:use[ruby-2.1.0-p0]'
+  invoke :'rvm:use[ruby-2.1.1-p0]'
 end
 
 desc "Deploys the current version to the server."
